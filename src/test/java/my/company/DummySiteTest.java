@@ -32,8 +32,8 @@ public class DummySiteTest {
 
         //Fill in registration form:
         //Fill in the first name and last name
-        $("#name_3_firstname").setValue("Sasha");
-        $("#name_3_lastname").setValue("Zubal");
+        $("#name_3_firstname").setValue("Orest");
+        $("#name_3_lastname").setValue("Ohorodnyk");
 
         //Select radio button. Here you search for an element by the classname "radio_wrap",
         // then you move deeper into hierarchy and look for an element with tag "input" and select such an element with value = married
@@ -45,8 +45,8 @@ public class DummySiteTest {
         //Select an option from a dropdown
         $("#dropdown_7").selectOption("Ukraine");
         $("#mm_date_8").selectOption("1");
-        $("#dd_date_8").selectOption("19");
-        $("#yy_date_8").selectOption("1986");
+        $("#dd_date_8").selectOption("21");
+        $("#yy_date_8").selectOption("1985");
 
         //Set phone number
         $(byName("phone_9")).setValue("0630000000");
@@ -68,7 +68,7 @@ public class DummySiteTest {
         $("#confirm_password_password_2").setValue("123456789");
 
         //Set path profile picture. It is not needed to use Browse button and select such a path, you set it directly into the field
-        $("#profile_pic_10").setValue("C:\\Users\\Oleksandra_Zubal\\Pictures\\FullSizeRender.jpg");
+        $("#profile_pic_10").setValue(System.getProperty("user.dir")+"\\test_data\\test.png");
 
         //Click on Register button
         $(byAttribute("name", "pie_submit")).click();
